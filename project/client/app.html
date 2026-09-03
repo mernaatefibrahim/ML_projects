@@ -1,0 +1,44 @@
+<form class="form">
+
+    <h2>Area (Square Feet)</h2>
+    <input
+        class="area"
+        type="text"
+        id="uiSqft"
+        name="Squareft"
+        value="1000"
+    >
+
+    <h2>BHK</h2>
+
+    <div class="switch-field">
+        ...
+    </div>
+
+    <h2>Bath</h2>
+
+    <div class="switch-field">
+        ...
+    </div>
+
+    <h2>Location</h2>
+
+    <select class="location" id="uiLocations">
+        <option value="" disabled selected>
+            Choose a Location
+        </option>
+    </select>
+
+    <button
+        class="submit"
+        onclick="onClickedEstimatePrice()"
+        type="button"
+    >
+        Estimate Price
+    </button>
+
+    <div id="uiEstimatedPrice" class="result">
+        <h2></h2>
+    </div>
+
+</form>
