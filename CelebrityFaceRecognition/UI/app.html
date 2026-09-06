@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Celebrity Image Classifier</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="dropzone.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dropzone.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="badge">AI IMAGE CLASSIFIER</div>
+
+            <h1>Celebrity Image Classifier</h1>
+
+            <p class="subtitle">
+                Upload an image and discover which celebrity it is.
+            </p>
+        </header>
+
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <form action="/" class="dropzone" id="dropzone">
+
+                <div class="fallback">
+                    <input type="file" name="file">
+                </div>
+
+            </form>
+
+            <button id="submitBtn">
+                Classify Image
+            </button>
+
+        </section>
+
+
+        <!-- Error -->
+        <div id="error"></div>
+
+
+        <!-- Prediction -->
+        <section id="resultHolder"></section>
+
+
+        <!-- Probabilities -->
+        <section id="divClassTable">
+
+            <h2>Classification Probabilities</h2>
+
+            <div id="probabilityList"></div>
+
+        </section>
+
+
+        <!-- Celebrity Gallery -->
+        <section class="gallery">
+
+            <h2>Supported Celebrities</h2>
+
+            <div class="celebrity-grid">
+
+                <div class="celebrity-card">
+                    <img src="./images/Mohamed_Salah.jpg"
+                         alt="Mohamed Salah">
+                    <h3>Mohamed Salah</h3>
+                </div>
+
+                <div class="celebrity-card">
+                    <img src="./images/Farida_Osman.jpg"
+                         alt="Farida Osman">
+                    <h3>Farida Osman</h3>
+                </div>
+
+                <div class="celebrity-card">
+                    <img src="./images/Mostafa_Shobeir.jpg"
+                         alt="Mostafa Shobeir">
+                    <h3>Mostafa Shobeir</h3>
+                </div>
+
+                <div class="celebrity-card">
+                    <img src="./images/Sara_Samir.jpg"
+                         alt="Sara Samir">
+                    <h3>Sara Samir</h3>
+                </div>
+
+                <div class="celebrity-card">
+                    <img src="./images/maria-sharapova (1).jpg"
+                         alt="Maria Sharapova">
+                    <h3>Maria Sharapova</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
